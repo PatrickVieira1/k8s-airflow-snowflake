@@ -15,7 +15,7 @@ con = snowflake.connector.connect(
 
 
 query = """ INSERT INTO SAMPLE_DATA (name, created, status)
-VALUES ('Joao coe', CURRENT_TIMESTAMP, TRUE);
+VALUES ('Joao Kuberlitos', CURRENT_TIMESTAMP, TRUE);
   """
 
 try:
