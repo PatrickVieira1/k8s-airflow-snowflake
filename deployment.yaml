@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: database-connector-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database-connector
+  template:
+    metadata:
+      labels:
+        app: database-connector
+    spec:
+      containers:
+      - name: database-connector-container
+        image: database-connector-image
+        ports:
+        - containerPort: 80
